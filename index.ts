@@ -1,5 +1,5 @@
-// index.js
-export default async function handler(request) {
+// index.ts
+export default async function handler(request: Request): Promise<Response> {
     const start = performance.now();
   
     const response = {

@@ -1,4 +1,5 @@
 // index.js
+
 export default async function handler(request) {
   const start = performance.now();
 

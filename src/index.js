@@ -1,6 +1,6 @@
-// index.js
+import { serve } from "https://deno.land/std@0.188.0/http/server.ts";
 
-export default async function handler(request) {
+async function handler(request: Request): Promise<Response> {
   const start = performance.now();
 
   const response = {
@@ -13,3 +13,5 @@ export default async function handler(request) {
     headers: { 'content-type': 'application/json' }
   });
 }
+
+serve(handler);

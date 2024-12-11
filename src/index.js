@@ -1,6 +1,6 @@
 import { serve } from "https://deno.land/std@0.188.0/http/server.ts";
 
-async function handler(request: Request): Promise<Response> {
+async function handler(request) {
   const start = performance.now();
 
   const response = {
